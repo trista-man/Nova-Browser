@@ -1,6 +1,6 @@
 # Nova Browser
 Nova browser is a browser that is still in development. You can start testing it now, though.
-The link for internal pages is `nova://`
+The link for internal pages is `nova://`. This browser is built on Edge WebView 2.
 
 # Changelog
 0.8 ALPHA
@@ -17,3 +17,7 @@ The link for internal pages is `nova://`
 - [ ] the WebExtensions API
 - [ ] import data from other browsers
 - [ ] more flags
+
+> # Known issues
+
+- `nova://about` currently points to edge urls.
