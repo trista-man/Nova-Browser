@@ -7,7 +7,7 @@
 
     <style>
         body {
-            font-family: Segoe UI, Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background: #0f1117;
             color: #ffffff;
             margin: 0;
@@ -84,7 +84,6 @@
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -96,11 +95,13 @@
         C#, WinForms, and WebView2.
     </p>
 
-    <a class="download-btn"
-   href="https://drive.google.com/uc?export=download&id=1Nu_hkGfbECySCCQaVrqTObGPq7ne9fT3">
-    Download Nova Browser
-</a>
+    <!-- Added download attribute to assist browser file handoff -->
+    <a class="download-btn" download href="https://google.com">
+        Download Nova Browser
+    </a>
+</header>
 
+<div class="container">
     <div class="card">
         <h2>About Nova Browser</h2>
         <p>
@@ -112,42 +113,44 @@
 
     <div class="card">
         <h2>New Tab Page</h2>
-        <img src="images/screenshot.png" alt="<div class="card">
+        <img src="images/screenshot.png" alt="New Tab Page">
+    </div>
+
+    <div class="card">
         <h2>nova://version</h2>
-        <images/about.png
+        <img src="images/about.png" alt="Version Page">
     </div>
 
     <div class="card">
         <h2>Bookmarks Bar</h2>
         <p>Default bookmarks included with Nova Browser.</p>
-        <images/defbookmarks.png
+        <img src="images/defbookmarks.png" alt="Bookmarks Bar">
     </div>
 
     <div class="card">
         <h2>nova://flags</h2>
-        <images/flags.png
+        <img src="images/flags.png" alt="Flags Page">
     </div>
 
     <div class="card">
         <h2>nova://gpu</h2>
-        <images/gpu.png
+        <img src="images/gpu.png" alt="GPU Page">
     </div>
 
     <div class="card">
         <h2>Nova Menu</h2>
-        <images/novamenu.png
+        <img src="images/novamenu.png" alt="Nova Menu">
     </div>
 
     <div class="card">
         <h2>nova://settings</h2>
-        images/settings.png
+        <img src="images/settings.png" alt="Settings Page">
     </div>
 
     <div class="card">
         <h2>Status Bar</h2>
-        <mages/statusbar.png
+        <img src="images/statusbar.png" alt="Status Bar">
     </div>
-
 </div>
 
 <footer>
