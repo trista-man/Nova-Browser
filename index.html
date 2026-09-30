@@ -1,35 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Browser</title>
+
+    <style>
+        body {
+            font-family: Segoe UI, Arial, sans-serif;
+            background: #0f1117;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1b2435, #2e3d5c);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #c0c9d8;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #4a8cff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #6fa4ff;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .card {
+            background: #1c2230;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #11151d;
+            color: #999;
+        }
+    </style>
 </head>
+
 <body>
+
+<header>
     <h1>Nova Browser</h1>
-    <p>A custom browser built by Tristan, co-founder of EDTgames. Tristan is the main developer for EDTgames' software. All software produced by EDTgames is open-source. </p>
-    <p>New Tab Page</p>
-    <img src="images/screenshot.png"
-alt="Nova Browser Screenshot">
-    <p>nova://version</p>
-    <img src="images/about.png"
-alt="Nova Browser Screenshot">
-    <p>Bookmarks bar, with default bookmarks</p>
-    <img src="images/defbookmarks.png"
-alt="Nova Browser Screenshot">
-    <p>nova://flags</p>
-    <img src="images/flags.png"
-alt="Nova Browser Screenshot">
-    <p>nova://gpu</p>
-    <img src="images/gpu.png"
-alt="Nova Browser Screenshot">
-    <p>Nova browser menu</p>
-    <img src="images/novamenu.png"
-alt="Nova Browser Screenshot">
-    <p>nova://settings</p>
-    <img src="images/settings.png"
-alt="Nova Browser Screenshot">
-    <p>Status Bar</p>
-    <img src="images/statusbar.png"
-alt="Nova Browser Screenshot">
-    <p>A Chromium-based browser built using C#, WinForms, and WebView2.</p>
+
+    <p class="subtitle">
+        A custom Chromium-based browser built by Tristan McGrath,
+        co-founder of EDTgames SMCO. Nova Browser is built using
+        C#, WinForms, and WebView2.
+    </p>
+
+    <a class="download-btn"
+       href="https://drive.google.com/uc?export=download&id=1Nu_hkGfbECySCCQaVrqTObGPq7ne9fT3">
+       Download Nova "container">
+
+    <div class="card">
+        <h2>About Nova Browser</h2>
+        <p>
+            Nova Browser is an open-source web browser developed by EDTgames.
+            It features custom internal pages, a customizable interface,
+            bookmarks, settings, diagnostics tools, and a modern browser experience.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>New Tab Page</h2>
+        <img src="images/screenshot.png" alt="<div class="card">
+        <h2>nova://version</h2>
+        <imges/about.png
+    </div>
+
+    <div class="card">
+        <h2>Bookmarks Bar</h2>
+        <p>Default bookmarks included with Nova Browser.</p>
+        <imges/defbookmarks.png
+    </div>
+
+    <div class="card">
+        <h2>nova://flags</h2>
+        <imges/flags.png
+    </div>
+
+    <div class="card">
+        <h2>nova://gpu</h2>
+        <imges/gpu.png
+    </div>
+
+    <div class="card">
+        <h2>Nova Menu</h2>
+        <imges/novamenu.png
+    </div>
+
+    <div class="card">
+        <h2>nova://settings</h2>
+        images/settings.png
+    </div>
+
+    <div class="card">
+        <h2>Status Bar</h2>
+        <mages/statusbar.png
+    </div>
+
+</div>
+
+<footer>
+    Nova Browser 0.9 Alpha • EDTgames SMCO • Open Source
+</footer>
+
 </body>
 </html>
