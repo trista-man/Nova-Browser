@@ -17,7 +17,8 @@ The link for internal pages is `nova://`. This browser is built on Edge WebView 
   - AMD Athlon or Intel equilivant or higher
   - 28 GB free on NVMe SSD or higher (If you would like to edit the src without choking Windows)
 
-
+# Download link
+[Download Nova browser](https://trista-man.github.io/Nova-Browser/)
 # Changelog
 0.8 ALPHA
 - [x] Nova browser hits github
