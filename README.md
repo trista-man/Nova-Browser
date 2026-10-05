@@ -39,3 +39,5 @@ The link for internal pages is `nova://`. This browser is built on Edge WebView 
 
 - `nova://about` currently points to edge urls.
 - `Edge WebView2` comes with a status popup, and Nova Browser has a standalone status bar, meaning there is a popup and a bar, which is currently being fixed.
+
+>If you find a bug or problem with Nova Browser, then please create an issue. Your bug will be patched.
