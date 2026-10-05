@@ -1,8 +1,28 @@
-- name: Restore
-  run: dotnet restore src/NovaBrowser.csproj
+name: Publish Nova Browser
 
-- name: Build
-  run: dotnet build src/NovaBrowser.csproj -c Release --no-restore
+on:
+  push:
+    branches:
+      - main
 
-- name: Pack
-  run: dotnet pack src/NovaBrowser.csproj -c Release -o artifacts
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore src/NovaBrowser.csproj
+
+      - name: Build
+        run: dotnet build src/NovaBrowser.csproj -c Release --no-restore
+
+      - name: Pack
+        run: dotnet pack src/NovaBrowser.csproj -c Release -o artifacts
