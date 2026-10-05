@@ -1,34 +1,8 @@
-name: Publish Nova Browser
+- name: Restore
+  run: dotnet restore src/NovaBrowser.csproj
 
-on:
-  release:
-    types: [published]
+- name: Build
+  run: dotnet build src/NovaBrowser.csproj -c Release --no-restore
 
-permissions:
-  id-token: write
-  contents: read
-
-jobs:
-  publish:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
-
-      - name: Restore
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build -c Release
-
-      - name: Pack
-        run: dotnet pack -c Release -o artifacts
-
-      - name: Publish to NuGet
-        run: dotnet nuget push artifacts\*.nupkg --source https://api.nuget.org/v3/index.json
+- name: Pack
+  run: dotnet pack src/NovaBrowser.csproj -c Release -o artifacts
